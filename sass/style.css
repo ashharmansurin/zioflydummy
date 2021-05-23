@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, ul, small {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.cust-height-md {
+  height: 75vh !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header .header-container {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+header .header-container .logo img {
+  width: 200px;
+}
+header .header-container .search-control {
+  flex-basis: 50%;
+  position: relative;
+}
+header .header-container .search-control input[type=text] {
+  width: 100%;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  padding-left: 8rem;
+  border: none;
+}
+header .header-container .search-control input[type=text]:focus {
+  outline: none;
+}
+header .header-container .search-control span#menu {
+  position: absolute;
+  left: 1.5rem;
+  color: gold;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .header-container .search-control #search {
+  position: absolute;
+  right: 2rem;
+  font-size: 1.3rem;
+  color: gold;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .header-container .btn-control .btn {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background-color: gold;
+  color: black;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+}
+header .header-container .pro-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 8%;
+}
+header .header-container .pro-bar .pro {
+  font-size: 1.6rem;
+}
+header .header-container .pro-bar .toggle-btn {
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0px 0px 8px 0px rgba(128, 128, 128, 0.75);
+  cursor: pointer;
+}
+header .header-container .pro-bar .toggle-btn i {
+  font-size: 1.6rem;
+  color: gold;
+}
+header .header-container .pro-bar .toggle-btn:hover {
+  background-color: gold;
+}
+header .header-container .pro-bar .toggle-btn:hover i {
+  color: white;
+}
+
+header.scroll-header {
+  background-color: white;
+  padding: 1rem;
+}
+header.scroll-header .search-control input {
+  border: 1px solid gold !important;
+}
+
+footer {
+  margin-top: 4rem;
+}
+footer .footer_first {
+  text-align: center;
+}
+footer .footer_first .search-control {
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+}
+footer .footer_first .search-control input[type=text] {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  border-radius: 2rem;
+  padding: 0.5rem 5rem 0.5rem 5rem;
+  box-shadow: 2px 4px 19px -10px rgba(128, 128, 128, 0.75);
+}
+footer .footer_first .search-control input[type=text]:focus {
+  outline: none;
+  border: none;
+}
+footer .footer_first .search-control #search {
+  position: absolute;
+  right: 30rem;
+  font-size: 1.3rem;
+  color: gold;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer .footer_first .search-control #envelope {
+  position: absolute;
+  left: 30rem;
+  font-size: 1.3rem;
+  color: gray;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer .footer_second {
+  width: 70vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.hero {
+  background-image: url(../images/sky.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
+}
+.hero .hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.hero .hero-content .hero-btn-group {
+  display: flex;
+  align-items: center;
+}
+.hero .hero-content .hero-btn-group .browse-list {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background-color: gold;
+  color: black;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+}
+.hero .hero-content .hero-btn-group .find-dealer {
+  margin-left: 2rem;
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+}
+
+.most-popular {
+  margin: 2.5rem 0;
+  width: 100%;
+}
+.most-popular .cat-1 {
+  display: grid;
+  grid-template-columns: 34% 22% 22% 22%;
+  grid-template-rows: 16rem;
+}
+.most-popular .cat-1 .popular-text {
+  background: white;
+  padding: 2rem;
+  padding-left: 5rem;
+}
+.most-popular .cat-1 .popular-text h2 {
+  font-size: 4rem;
+}
+.most-popular .cat-1 .popular-text h2 span {
+  font-weight: 800;
+}
+.most-popular .cat-1 .popular-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  transition: transform 0.3s linear;
+}
+.most-popular .cat-1 .popular-card .popular-card-body {
+  display: flex;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+.most-popular .cat-1 .popular-card .popular-card-body h5 {
+  font-size: 1.7rem;
+}
+.most-popular .cat-1 .popular-card .arrow {
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  align-self: flex-end;
+}
+.most-popular .cat-1 .popular-card .arrow i {
+  font-size: 1.5rem;
+}
+.most-popular .cat-1 .popular-card .arrow-diff {
+  background: #add8e621;
+}
+.most-popular .cat-1 .popular-card:hover {
+  transform: translateY(-2rem);
+}
+.most-popular .cat-1 .popular-card:hover .arrow {
+  background: gold;
+  box-shadow: 0px 6px 15px 0px rgba(128, 128, 128, 0.75);
+}
+.most-popular .cat-1 .popular-card:nth-child(even) {
+  background-color: #add8e621;
+}
+.most-popular .cat-2 {
+  display: grid;
+  grid-template-columns: 12% 22% 22% 22% 22%;
+  grid-template-rows: 16rem;
+}
+.most-popular .cat-2 .popular-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  transition: transform 0.3s linear;
+}
+.most-popular .cat-2 .popular-card .popular-card-body {
+  display: flex;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+.most-popular .cat-2 .popular-card .popular-card-body h5 {
+  font-size: 1.7rem;
+}
+.most-popular .cat-2 .popular-card .arrow {
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  align-self: flex-end;
+}
+.most-popular .cat-2 .popular-card .arrow i {
+  font-size: 1.5rem;
+}
+.most-popular .cat-2 .popular-card .arrow-diff {
+  background: #add8e621;
+}
+.most-popular .cat-2 .popular-card:hover {
+  transform: translateY(-2rem);
+}
+.most-popular .cat-2 .popular-card:hover .arrow {
+  background: gold;
+  box-shadow: 0px 6px 15px 0px rgba(128, 128, 128, 0.75);
+}
+.most-popular .cat-2 .popular-card:nth-child(even) {
+  background-color: #add8e621;
+}
+
+.recent-added .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recent-added .heading h2 {
+  flex-basis: 30%;
+  font-size: 3rem;
+}
+.recent-added .heading h2 span {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.recent-added .heading p {
+  flex-basis: 65%;
+  border-left: 0.2rem solid gray;
+  padding-left: 2rem;
+}
+
+.why-choose {
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.why-choose .why-choose-left {
+  background: #2dcea4;
+  height: 65vh;
+  border-bottom-right-radius: 7rem;
+}
+.why-choose .why-choose-left .heading {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.why-choose .why-choose-left .heading h2 {
+  flex-basis: 30%;
+  font-size: 2.4rem;
+}
+.why-choose .why-choose-left .heading h2 span {
+  font-weight: 700;
+  font-size: 2.9rem;
+}
+.why-choose .why-choose-left .heading p {
+  flex-basis: 65%;
+  border-left: 0.2rem solid white;
+  padding-left: 2rem;
+}
+.why-choose .why-choose-left .pos-div {
+  width: 40vw;
+  height: 50vh;
+  position: relative;
+  right: -10rem;
+  bottom: -2rem;
+}
+.why-choose .why-choose-left .pos-div img {
+  width: 100%;
+  height: 100%;
+}
+.why-choose .why-choose-left .pos-div iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 73%;
+  height: 80%;
+  transform: translate(-50.5%, -56%);
+  border-radius: 0.7rem;
+}
+.why-choose .why-choose-right .why-choose-card .icon {
+  background: gold;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.why-choose .why-choose-right .why-choose-card .icon i {
+  font-size: 2.5rem;
+  color: white;
+}
+.why-choose .why-choose-right .why-choose-card .rot {
+  transform: rotate(-45deg);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+@mixin main-btn($bg-color,$color){
+    display: inline-block;
+    padding:.8rem 2.5rem;
+    background-color: $bg-color;
+    color:$color;
+    font-weight: 700;
+    font-size:1.1rem;
+    border-radius: 2rem;
+}

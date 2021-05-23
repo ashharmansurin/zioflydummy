@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+p,ul,small{
+    margin:0;
+    padding:0;
+
+}
+a,a:hover{
+    text-decoration: none;
+}
+.cust-height-md{
+    height:75vh!important;
+}
+
+html{
+    font-size: 62.5%
+}
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'partials/home';
