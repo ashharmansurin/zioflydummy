@@ -13,6 +13,10 @@ a, a:hover {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .cust-height-md {
   height: 75vh !important;
 }
@@ -145,11 +149,36 @@ footer .footer_first .search-control #envelope {
   top: 50%;
   transform: translateY(-50%);
 }
-footer .footer_second {
+
+.footer_second {
+  width: 100%;
+  background-image: linear-gradient(whitesmoke, lightgray);
+}
+.footer_second .second_container {
   width: 70vw;
   margin: 2rem auto 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.footer_second .second_container h4 {
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.footer_second .second_container h4::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3rem;
+  height: 0.2rem;
+  background: #2dcea4;
+}
+.footer_second .second_container ul li {
+  margin-bottom: 0.8rem;
+}
+.footer_second .second_container ul li a {
+  color: gray;
 }
 
 .hero {

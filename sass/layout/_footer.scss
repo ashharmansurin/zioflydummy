@@ -37,10 +37,39 @@ footer{
             }
         }
     }
-    .footer_second{
-        width: 70vw;
-        margin: 2rem auto 0 auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+ 
+}
+.footer_second{
+    width: 100%;
+    background-image: linear-gradient(whitesmoke,lightgray);
+    .second_container{
+    width: 70vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+ 
+    h4{
+        margin-bottom: 1.2rem;
+        position: relative;
+        padding-bottom: .5rem;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom:0;
+            left:0;
+            width: 3rem;
+            height:.2rem;
+            background: #2dcea4;
+            
+        }
     }
+    ul{
+        li{
+            margin-bottom: .8rem;
+            a{
+                color:gray;
+            }
+        }
+    }
+}
 }
