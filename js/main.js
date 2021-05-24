@@ -10,7 +10,19 @@ window.addEventListener('scroll', function (event) {
         header.classList.remove('scroll-header');
     }
 })
-
+// toggle open
+const toggleMenu = document.querySelector('.toggle-btn');
+toggleMenu.addEventListener('click', function () {
+    console.log('i am clicked');
+    const navBar = document.querySelector('nav');
+    navBar.classList.add('nav-open');
+});
+const toggleMenuClose = document.querySelector('.toggle-btn-cross');
+toggleMenuClose.addEventListener('click', function () {
+    console.log('i am clicked');
+    const navBar = document.querySelector('nav');
+    navBar.classList.remove('nav-open');
+});
 // recent added owl carousel slider jquery code
 
 $('.recent-added-slider').owlCarousel({
