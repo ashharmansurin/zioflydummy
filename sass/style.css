@@ -117,17 +117,18 @@ footer .footer_first {
   text-align: center;
 }
 footer .footer_first .search-control {
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
   position: relative;
+  box-shadow: 1px 9px 5px 0px #d3d3d33d;
   margin-top: 2rem;
 }
 footer .footer_first .search-control input[type=text] {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   border: 1px solid lightgray;
   border-radius: 2rem;
   padding: 0.5rem 5rem 0.5rem 5rem;
-  box-shadow: 2px 4px 19px -10px rgba(128, 128, 128, 0.75);
 }
 footer .footer_first .search-control input[type=text]:focus {
   outline: none;
@@ -152,9 +153,10 @@ footer .footer_first .search-control #envelope {
 
 .footer_second {
   width: 100%;
-  background-image: linear-gradient(whitesmoke, #d3d3d359);
+  background-image: linear-gradient(white, lightgray);
   position: relative;
-  padding-top: 2rem;
+  padding-top: 1.7rem;
+  padding-bottom: 2rem;
 }
 .footer_second .second_container {
   width: 70vw;
@@ -186,7 +188,18 @@ footer .footer_first .search-control #envelope {
   position: absolute;
   width: 35rem;
   right: 12rem;
-  bottom: -7rem;
+  bottom: -2rem;
+}
+.footer_second .social-icon {
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer_second .social-icon i {
+  font-size: 1.4rem;
 }
 
 .hero {
