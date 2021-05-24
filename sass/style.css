@@ -152,7 +152,9 @@ footer .footer_first .search-control #envelope {
 
 .footer_second {
   width: 100%;
-  background-image: linear-gradient(whitesmoke, lightgray);
+  background-image: linear-gradient(whitesmoke, #d3d3d359);
+  position: relative;
+  padding-top: 2rem;
 }
 .footer_second .second_container {
   width: 70vw;
@@ -180,6 +182,12 @@ footer .footer_first .search-control #envelope {
 .footer_second .second_container ul li a {
   color: gray;
 }
+.footer_second .footer-pos {
+  position: absolute;
+  width: 35rem;
+  right: 12rem;
+  bottom: -7rem;
+}
 
 .hero {
   background-image: url(../images/sky.jpg);
@@ -188,6 +196,7 @@ footer .footer_first .search-control #envelope {
   background-size: cover;
   width: 100%;
   height: 75vh;
+  position: relative;
 }
 .hero .hero-content h1 {
   font-size: 4rem;
@@ -215,6 +224,73 @@ footer .footer_first .search-control #envelope {
   font-weight: 700;
   font-size: 1.1rem;
   border-radius: 2rem;
+}
+.hero .main-social-networking {
+  position: fixed;
+  right: 0;
+  top: 30%;
+}
+.hero .main-social-networking li {
+  padding: 0.2rem;
+  border-top-left-radius: 2.3rem;
+  border-bottom-left-radius: 2.3rem;
+  transform: translateX(81px);
+  overflow: hidden;
+  transition: transform 0.3s linear;
+  margin: 0.3rem 0;
+}
+.hero .main-social-networking li:hover {
+  transform: translate(0px);
+}
+.hero .main-social-networking li a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.hero .main-social-networking li a i {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  color: white;
+  background-color: white;
+  text-align: center;
+}
+.hero .main-social-networking li a i.fab.fa-facebook-f {
+  background: #3b5999;
+}
+.hero .main-social-networking li a i.fab.fa-twitter {
+  background: #55acee;
+}
+.hero .main-social-networking li a i.fab.fa-instagram {
+  background: #e4405f;
+}
+.hero .main-social-networking li a i.fab.fa-youtube {
+  background: #cd201f;
+}
+.hero .main-social-networking li .fb {
+  color: white;
+}
+.hero .main-social-networking li .tw {
+  color: white;
+}
+.hero .main-social-networking li .insta {
+  color: white;
+}
+.hero .main-social-networking li .ut {
+  color: white;
+}
+.hero .main-social-networking li:nth-child(1) {
+  background-color: #3b5999;
+}
+.hero .main-social-networking li:nth-child(2) {
+  background-color: #55acee;
+}
+.hero .main-social-networking li:nth-child(3) {
+  background-color: #e4405f;
+}
+.hero .main-social-networking li:nth-child(4) {
+  background-color: #cd201f;
 }
 
 .most-popular {
@@ -343,6 +419,39 @@ footer .footer_first .search-control #envelope {
   border-left: 0.2rem solid gray;
   padding-left: 2rem;
 }
+.recent-added .recent-added-wrapper .recent-added-card {
+  padding: 2rem;
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.recent-added .recent-added-wrapper .recent-added-card .recent-added-images {
+  flex-basis: 58%;
+}
+.recent-added .recent-added-wrapper .recent-added-card .recent-added-images .main-image {
+  width: 100%;
+  height: 22rem;
+}
+.recent-added .recent-added-wrapper .recent-added-card .recent-added-images .main-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+}
+.recent-added .recent-added-wrapper .recent-added-card .recent-added-images .multi-images {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+.recent-added .recent-added-wrapper .recent-added-card .recent-added-images .multi-images img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.recent-added .recent-added-wrapper .recent-added-card .recent-added-content {
+  flex-basis: 35%;
+}
 
 .why-choose {
   width: 100%;
@@ -407,6 +516,19 @@ footer .footer_first .search-control #envelope {
 .why-choose .why-choose-right .why-choose-card .icon i {
   font-size: 2.5rem;
   color: white;
+}
+.why-choose .why-choose-right .why-choose-card .why-choose-body h5 {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.why-choose .why-choose-right .why-choose-card .why-choose-body h5::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3rem;
+  height: 0.2rem;
+  background: #2dcea4;
 }
 .why-choose .why-choose-right .why-choose-card .rot {
   transform: rotate(-45deg);

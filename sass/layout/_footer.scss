@@ -41,7 +41,9 @@ footer{
 }
 .footer_second{
     width: 100%;
-    background-image: linear-gradient(whitesmoke,lightgray);
+    background-image: linear-gradient(whitesmoke,#d3d3d359);
+    position: relative;
+    padding-top: 2rem;
     .second_container{
     width: 70vw;
     margin: 2rem auto 0 auto;
@@ -71,5 +73,11 @@ footer{
             }
         }
     }
+}
+.footer-pos{
+    position: absolute;
+    width: 35rem;
+    right: 12rem;
+    bottom: -7rem;
 }
 }

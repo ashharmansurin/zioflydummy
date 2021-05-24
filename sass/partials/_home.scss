@@ -5,6 +5,7 @@
     background-size: cover;
     width: 100%;
     height:75vh;
+    position: relative;
     .hero-content{
         h1 {
             font-size: 4rem;
@@ -20,6 +21,74 @@
                 margin-left:2rem;
                 @include main-btn(white,black);
             }
+        }
+    }
+    .main-social-networking{
+        position: fixed;
+        right: 0;
+        top: 30%;
+        li {
+            padding: .2rem;
+            border-top-left-radius: 2.3rem;
+            border-bottom-left-radius: 2.3rem;
+            transform: translateX(81px);
+            overflow: hidden;
+            transition: transform .3s linear;
+            margin:.3rem 0;
+            &:hover{
+                transform: translate(0px);
+            }
+            a{
+                font-size: 1.5rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+                i{
+                    width: 4rem;
+                    height: 4rem;
+                    line-height: 4rem;
+                    border-radius: 50%;
+                    color: white;
+                    background-color: white;
+                    text-align: center;
+                }
+                i.fab.fa-facebook-f {
+                    background: #3b5999;
+                }
+                i.fab.fa-twitter {
+                    background: #55acee;
+                }
+                i.fab.fa-instagram {
+                    background:#e4405f ;
+                }
+                i.fab.fa-youtube {
+                    background:#cd201f ;
+                }
+            }
+            .fb{
+                
+                color:white;
+            }
+            .tw{
+                color:white;
+            }
+            .insta{
+                color:white;
+            }
+            .ut{
+                color:white;
+            }
+        }
+        li:nth-child(1){
+            background-color:#3b5999;
+        }
+        li:nth-child(2){
+            background-color:#55acee;
+        }
+        li:nth-child(3){
+            background-color: #e4405f;
+        }
+        li:nth-child(4){
+            background-color: #cd201f;
         }
     }
 }
@@ -151,6 +220,42 @@
             padding-left:2rem;
         }
     }
+    .recent-added-wrapper{
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+        .recent-added-card{
+            padding:2rem;
+            display: flex;
+            column-gap: 2rem;
+            .recent-added-images{
+                flex-basis: 58%;
+                .main-image{
+                    width: 100%;
+                    height:22rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 1.2rem;
+                    }
+                }
+                .multi-images{
+                    padding:1.5rem;
+                    display: grid;
+                    grid-template-columns: repeat(3 ,1fr);
+                    grid-gap: 1.5rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 1rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .recent-added-content{
+                flex-basis: 35%;
+            }
+        }
+    }
 }
 
 .why-choose{
@@ -216,6 +321,22 @@
                 i{
                     font-size: 2.5rem;
                      color: white;
+                }
+            }
+            .why-choose-body{
+                h5{
+                    position: relative;
+                    padding-bottom: .5rem;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        bottom:0;
+                        left:0;
+                        width: 3rem;
+                        height:.2rem;
+                        background: #2dcea4;
+                        
+                    }
                 }
             }
             .rot {
