@@ -15,8 +15,8 @@ window.addEventListener('scroll', function (event) {
 
 $('.recent-added-slider').owlCarousel({
     loop: true,
-    margin: 10,
-    stagePadding: 20,
+    margin: 50,
+    stagePadding: 50,
     nav: true,
     responsive: {
         0: {
