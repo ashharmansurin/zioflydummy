@@ -29,7 +29,7 @@ $('.recent-added-slider').owlCarousel({
     loop: true,
     margin: 50,
     stagePadding: 50,
-    nav: true,
+    nav: false,
     responsive: {
         0: {
             items: 1

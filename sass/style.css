@@ -174,7 +174,7 @@ footer .footer_first .search-control input[type=text]:focus {
 }
 footer .footer_first .search-control #search {
   position: absolute;
-  right: 30rem;
+  right: 1.5rem;
   font-size: 1.3rem;
   color: gold;
   top: 50%;
@@ -182,7 +182,7 @@ footer .footer_first .search-control #search {
 }
 footer .footer_first .search-control #envelope {
   position: absolute;
-  left: 30rem;
+  left: 1.5rem;
   font-size: 1.3rem;
   color: gray;
   top: 50%;
